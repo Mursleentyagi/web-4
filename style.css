@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: hsl(346deg,17%,70%);
+    display: flex;
+}
+
+#part1{
+    height: 100%;
+    width: 26%;
+    /* background-color: red; */
+}
+#part2{
+    height: 100%;
+    width: 67%;
+    background-color: rgb(0, 157, 255);
+    background-image: url(img/img1.jpg);
+    background-size: cover;
+}
+
+#overlay{
+    height: 100%;
+    width: 100%;
+    background-color: hsla(0, 1%, 36%, 0.138);
+}
+#part3{
+    height: 100%;
+    width: 7%;
+    /* background-color: rgb(0, 255, 64); */
+}
+
+#text-div{
+    /* height: 300px; */
+    position: absolute;
+    width: 400px;
+    /* background-color: red; */
+    left: 5%;
+    top: 50%;
+    transform: translate(0,-50%);
+    height: 300px;
+    width: 500px;
+   
+}
+
+#text-div h1:after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 60px;
+    width: 0;
+    transition: 0.3s;
+    right: 0;
+    top: 8px;
+
+}
+
+
+#text-div h1:hover:after{
+    width: 28%;
+}
+
+#text-div h1:nth-child(2):hover:after{
+    width: 37%;
+}
+
+#text-div h1:nth-child(3):hover:after{
+    width: 63%;
+}
+
+#text-div h1:nth-child(4):hover:after{
+    width: 12%;
+}
+
+
+#text-div > h1{
+    font-size: 80px;
+    font-family: gilroy;
+    font-size: 900;
+    line-height: 78px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+
+
+#small-image-div{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0,-50%);
+    background-image: url(img/img2.jpg);
+    background-size: cover;
+}
+
+#overlay-in{
+    height: 100%;
+    width: 100%;
+    background-color: hsla(0, 1%, 36%, 0.138);
+}
+
+#verticle-text{
+    position: absolute;
+    transform: rotate(90deg);
+    top: 45%;
+    right: -20%;
+    
+}
+
+#verticle-text h1{
+    font-size: 65px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    font-family: monument;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #ffffff;
+    color: transparent;
+}
